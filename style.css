@@ -1,0 +1,239 @@
+/*
+Theme Name: Theme cube Teach
+Theme URI: http://wordpress.org/themes/twentythirteen
+Author: the WordPress team
+Author URI: http://wordpress.org/
+Description: The 2013 theme for WordPress takes us back to the blog, featuring a full range of post formats, each displayed beautifully in their own unique way. Design details abound, starting with a vibrant color scheme and matching header images, beautiful typography and icons, and a flexible layout that looks great on any device, big or small.
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: black, brown, orange, tan, white, yellow, light, one-column, two-columns, right-sidebar, flexible-width, custom-header, custom-menu, editor-style, featured-images, microformats, post-formats, rtl-language-support, sticky-post, translation-ready
+Text Domain: twentythirteen
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+*/
+
+#header{
+    color: white;
+    background-color: rgb(230, 71, 3);
+} 
+
+.section{
+    padding: 70px 0;
+}
+
+.section h2.section-head{
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.section h2.section-head::after{
+    background: rgb(230, 71, 3);
+    content: "";
+    display: block;
+    width: 100px;
+    height: 3px;
+    margin: 20px auto;
+}
+
+
+.menu li{
+    display: inline-block;
+}
+
+.menu li a{
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    display: block;
+}
+
+#banner{
+    background: url('img/2686700.png');
+    background-repeat: no-repeat;
+    margin: 0%;
+    padding: 0%;
+    background-size: cover;
+}
+
+.banner-title{
+    padding: 20% 0;
+}
+
+#manu li a:hover{
+    background-color: rgb(230, 71, 3);
+}
+ 
+.banner-title h1{
+    color:rgb(230, 71, 3);
+    font-weight: bolder;
+    display: inline-block;
+}
+
+.banner-title h1::before{
+    content:"";
+    width: 50px;
+    height: 2px;
+    color: rgb(230, 71, 3);
+}
+
+
+.service-box {
+    text-align: center;
+}
+
+.service-box i{
+    color: rgb(230, 71, 3);
+    font-size: 60px;
+    margin-bottom: 20px;
+}
+
+.testimonials{
+    padding: 0 10px;
+    text-align: center;
+}
+
+#testimonials{
+    background-image: url('img/builders.png');
+    background-size: cover;
+    position: relative;
+    background-repeat: no-repeat;
+    color: white;
+    z-index: -1;
+}
+
+#testimonials::before{
+    background: rgba(60, 60, 60, 0.507);
+    content: "";
+    position: absolute;
+    top:0;
+    width: 100%;
+    height: 100%;
+    z-index: -2;
+}
+
+
+
+.testimonials img{
+    width: 50px;
+    border-radius: 50px;
+}
+
+.news-post img{
+    width: 100%;
+}
+
+.news-post a{
+    text-decoration: none;
+    color: rgb(230, 71, 3);
+}
+
+.news-post h3{
+    margin: 20px 0;
+}
+
+.post-date{
+    font-weight: bold;
+}
+
+.post-date::before{
+    content: "\f073";
+    font-family: 'fontawesome';
+    padding-right: 5px;
+    color:rgb(230, 71, 3) ;
+}
+
+.ico{
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.ico::after{
+    content: "\f101";
+    font-family: 'fontawesome';
+    padding-left: 10px;
+    color: rgb(230, 71, 3);
+}
+
+.footer{
+    background-color: rgb(0, 24, 67);
+    color: white;
+    padding: 10px 0;
+}
+
+
+
+.footer ul{
+    list-style: none;
+}
+
+.footer ul li a{
+    text-decoration: none;
+    color: white;
+}
+
+.footer ul li::before{
+    content: "\f101";
+    font-family: 'fontawesome';
+    padding-right:5px;
+    color: rgb(230, 71, 3);
+}
+
+.news{
+    text-decoration: none;
+}
+
+.footer-widget .news::after{
+    content: "\f101";
+    font-family: 'fontawesome';
+    padding-left: 10px;
+    color: rgb(230, 71, 3);
+}
+
+.footer-buttom{
+    background-color: rgb(0, 19, 52);
+    color: white;
+}
+
+.footer-buttom .icon{
+    list-style: none;
+    float: right;
+}
+
+.footer-buttom .icon li{
+    display: inline-block;
+}
+
+.footer-buttom .icon li a{
+    color:white;
+    font-size: 20px;
+}
+
+.footer-col{
+    margin-top: 8px;
+}
+
+
+@media (max-width: 768px)
+{
+    .footer-buttom{
+        text-align: center;
+    }
+
+    .footer-buttom .icon{
+        float: none;
+    }
+
+    #manu{
+        float: none;
+    }
+    #header{
+        text-align: center;
+    }
+
+    .banner-title{
+        text-align: center;
+    }
+}
+
